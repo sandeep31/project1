@@ -1,4 +1,5 @@
 <?php
+
 if ( !class_exists( 'DB' ) ) {
 	class DB {
 		public function __construct($user, $password, $database, $host = 'localhost') {
