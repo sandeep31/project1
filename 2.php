@@ -1,5 +1,5 @@
 <?php
-
+//modifing code in  dev  branch ;
 if ( !class_exists( 'DB' ) ) {
 	class DB {
 		public function __construct($user, $password, $database, $host = 'localhost') {
