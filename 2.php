@@ -2,11 +2,14 @@
 //modifing code in  dev  branch ;
 if ( !class_exists( 'DB' ) ) {
 	class DB {
-		public function __construct($user, $password, $database, $host = 'localhost') {
+		public function __construct($user, $password, $database, $host = 'localhost',$port=NULL) {
 			$this->user = $user;
 			$this->password = $password;
 			$this->database = $database;
 			$this->host = $host;
+			if(!empty($port)):
+				$this->port = $port;
+			endif;
 		}
 		protected function connect() {
 			return new mysqli($this->host, $this->user, $this->password, $this->database);
