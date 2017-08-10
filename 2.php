@@ -2,7 +2,7 @@
 //modifing code in  dev  branch ;
 if ( !class_exists( 'DB' ) ) {
 	class DB {
-		private $port = 80;
+		private $port = NULL;
 		public function __construct($user, $password, $database, $host = 'localhost',$port=NULL) {
 			$this->user = $user;
 			$this->password = $password;
