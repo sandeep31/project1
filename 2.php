@@ -202,4 +202,4 @@ $db = new DB('root', '', 'greatweb_salestracker_v1');
 
 $res = $db->insert('auth_token', array('auth_token'=>'22222'), array('%s'));
 var_dump($res);
-exit;
+exit('@ dev brach');
